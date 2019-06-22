@@ -12,6 +12,7 @@
             type="hanwool.lotto.database.Lotto" />
     </data>
     <LinearLayout
+        android:id="@+id/lottery_set"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

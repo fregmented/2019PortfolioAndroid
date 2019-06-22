@@ -35,7 +35,8 @@
             android:onClick="@{fragment::onViewClick}"/>
         <include
             layout="@layout/item_lottery_set"
-            app:lotteryDto="@{createdLottery}"/>
+            android:visibility="gone"
+            app:lotteryDto="@{createdLottery}" />
 
         <Button
             android:id="@+id/btn_check_win"

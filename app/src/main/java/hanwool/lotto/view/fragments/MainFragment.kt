@@ -25,6 +25,7 @@ import androidx.databinding.adapters.TextViewBindingAdapter.setText
 import android.text.Editable
 import android.widget.Toast
 import hanwool.lotto.util.Utils
+import kotlinx.android.synthetic.main.item_lottery_set.*
 
 
 class MainFragment: NavFragmentBase<FragmentMainBinding>() {
@@ -50,6 +51,7 @@ class MainFragment: NavFragmentBase<FragmentMainBinding>() {
                 val lottoDto = LottoDto(ball1 = balls[0], ball2 = balls[1], ball3 = balls[2], ball4 = balls[3],
                     ball5 = balls[4], ball6 = balls[5], ballBonus = balls[6])
                 mBinding!!.createdLottery = lottoDto
+                lottery_set.visibility = View.VISIBLE
             }
             view.id == btn_check_win.id -> {
                 val selectedDrawNoStr = edit_draw_no.text.toString()
