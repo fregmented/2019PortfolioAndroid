@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorLotteryBallYellow">#FCB240</color>
+    <color name="colorLotteryBallBlue">#4D91E3</color>
+    <color name="colorLotteryBallRed">#DC5D43</color>
+    <color name="colorLotteryBallGrey">#74787F</color>
+    <color name="colorLotteryBallGreen">#44BE3E</color>
+    <color name="colorLotteryBallBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

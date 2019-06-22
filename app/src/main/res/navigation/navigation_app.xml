@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="hanwool.lotto.view.fragments.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_fragment_to_most_appeared_ball_fragment"
+            app:destination="@id/most_appeared_ball_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_past_result_fragment"
+            app:destination="@id/past_result_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/most_appeared_ball_fragment"
+        android:name="hanwool.lotto.view.fragments.MostAppeardBall.MostAppearedBall"
+        android:label="@string/title_most_appeard_ball"
+        tools:layout="@layout/fragment_most_appeared_ball"/>
+    <fragment
+        android:id="@+id/past_result_fragment"
+        android:name="hanwool.lotto.view.fragments.PastResult.PastResult"
+        android:label="@string/title_past_result"
+        tools:layout="@layout/fragment_most_appeared_ball"/>
+
+</navigation>

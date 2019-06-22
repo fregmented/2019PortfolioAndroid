@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="lotteryDto"
+            type="hanwool.lotto.data.model.LottoDto" />
+
+        <variable
+            name="lotteryRealm"
+            type="hanwool.lotto.database.Lotto" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball1 : lotteryRealm.ball1 }"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball2 : lotteryRealm.ball2 }"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball3 : lotteryRealm.ball3 }"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball4 : lotteryRealm.ball4 }"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball5 : lotteryRealm.ball5 }"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ball6 : lotteryRealm.ball6 }"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text="+"
+            android:textSize="20sp"/>
+        <hanwool.lotto.view.item.LotteryBall
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            app:number="@{ lotteryRealm==null ? lotteryDto.ballBonus : lotteryRealm.ballBonus }"/>
+    </LinearLayout>
+</layout>

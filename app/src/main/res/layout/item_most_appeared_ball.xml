@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="ballNumber"
+            type="int" />
+        <variable
+            name="ballCount"
+            type="int" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="@dimen/margin_small">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_small">
+            <hanwool.lotto.view.item.LotteryBall
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:number="@{ballNumber}"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{Integer.toString(ballCount) + `회`}"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_gravity="center_horizontal|bottom"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

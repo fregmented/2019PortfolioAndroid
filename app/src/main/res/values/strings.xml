@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LottoApp</string>
+    <string name="welcome_message">로또 생성기에 어서오세요!</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_create_lotery">로또 생성</string>
+    <string name="btn_check_win">당첨 확인</string>
+    <string name="btn_view_past_result">과거 내역 조회</string>
+    <string name="btn_view_most_appeared">자주 나온 번호 조회</string>
+    <string name="hint_draw_no">회차 입력</string>
+    <string name="hint_created_lottery">생성된 조합</string>
+    <string name="txt_created_lottery" formatted="false">%d, %d, %d, %d, %d, %d bonus=%d</string>
+    <string name="error_realm_save">로또정보를 가져오는데 에러가 발생하였습니다.\n앱을 종료합니다.</string>
+    <string name="error_no_draw_no">회차를 입력해 주세요.</string>
+    <string name="error_no_lotto">로또를 생성해 주세요.</string>
+    <string name="error_over_draw_no">아직 시행되지 않은 회차입니다.</string>
+    <string name="msg_prize_failed">낙첨되었습니다.</string>
+    <string name="msg_prize_win" formatted="true">%d등 입니다.</string>
+    <string name="title_main">Main</string>
+    <string name="title_most_appeard_ball">가장 많이 나타난 공</string>
+    <string name="title_past_result">과거 내역</string>
+    <string name="title_deep_link" formatted="true">%d회차</string>
+</resources>

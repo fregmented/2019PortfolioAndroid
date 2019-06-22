@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="fragment"
+            type="hanwool.lotto.view.fragments.MainFragment" />
+        <variable
+            name="createdLottery"
+            type="hanwool.lotto.data.model.LottoDto" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_draw_no"
+            android:textSize="@dimen/text_normal"
+            android:hint="@string/hint_draw_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/btn_create_lottery"
+            android:text="@string/btn_create_lotery"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:onClick="@{fragment::onViewClick}"/>
+        <include
+            layout="@layout/item_lottery_set"
+            app:lotteryDto="@{createdLottery}"/>
+
+        <Button
+            android:id="@+id/btn_check_win"
+            android:text="@string/btn_check_win"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:onClick="@{fragment::onViewClick}"/>
+        <Button
+            android:id="@+id/btn_view_past_result"
+            android:text="@string/btn_view_past_result"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:onClick="@{fragment::onViewClick}"/>
+        <Button
+            android:id="@+id/btn_view_most_appeared"
+            android:text="@string/btn_view_most_appeared"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:onClick="@{fragment::onViewClick}"/>
+    </LinearLayout>
+</layout>
