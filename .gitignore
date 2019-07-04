@@ -36,3 +36,5 @@ captures/
 \.idea/
 
 *.iml
+
+app/release/
